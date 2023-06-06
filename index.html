@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleContent.css">
+    <link rel="stylesheet" href="navANDres.css">
+</head>
+
+<body>
+    <section id="start">
+        <div class="search">
+            <form id="form">
+                <label class="labelmain" for="music">
+                    <h1>Please search for the song and lyrics you desire.</h1>
+                </label>
+                <div class="box">
+                    <input type="text" id="music" placeholder=" enter the artist name or song title.">
+                    <button class="btn">search</button>
+                </div>
+            </form>
+        </div>
+        <div id="nofound" class="none">
+            <h3>I'm sorry, but no search results were found for your query.</h3>
+        </div>
+        <nav id="Nav" class="fade">
+            <form id="formNav">
+                <label for="musicNav">
+                </label>
+                <div class="box-nav">
+                    <input type="text" id="musicNav">
+                    <button class="btn">search</button>
+                </div>
+            </form>
+        </nav>
+    </section>
+    <section id="displayResult" class='content none'>
+        <div class="Box">
+            <h1 id="total"></h1>
+        </div>
+        <ul id="result">
+        </ul>
+    </section>
+    <section id='displaydetail' class="none">
+        <section id="lyrics">
+            <span id="contentLyrics">
+            </span>
+        </section>
+        <footer>
+            <a id="linkToTop" href="#start">^<span id="effect" class="none">^</span></a>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
